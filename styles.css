@@ -1,0 +1,202 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #212163;
+    color: #fff;
+    padding: 20px 0; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espaço entre logo e o menu */
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #eb5436; 
+    padding: 10px 20px; /* Adiciona um espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px; 
+    transition: background-color 0.3s;
+    border-radius: 3px; /* Cantos arredondados nos links */
+    margin: 0 5px; /* Espaço entre os links */
+}
+
+nav li a:hover {
+    background-color: #d94529; 
+}
+
+
+/* Hero Section (Seção Inicial) */
+.hero {
+    background-image: url("https://jopanas.com.br/wp-content/uploads/2023/02/Salgados-para-festa-no-trabalho.jpg"); /* Substitua pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 150px 0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a legibilidade */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: bold; 
+}
+
+.hero p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Seção do Menu */
+.menu-section {
+    background-color: #fff;
+    padding: 80px 0; 
+}
+
+.section-title {
+    text-align: center;
+    color: #212163;
+    margin-bottom: 40px;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    position: relative; 
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #eb5436; 
+    margin: 20px auto 0; 
+}
+
+.menu-category {
+    margin-bottom: 60px;
+}
+
+.category-title {
+    border-bottom: 2px solid #eb5436;
+    padding-bottom: 10px;
+    display: inline-block; 
+    margin-bottom: 20px; 
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px; 
+}
+
+.menu-item {
+    width: 31%; 
+    margin-bottom: 20px; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.menu-item h4 {
+    color: #212163; 
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* Seção de Contato */
+.contact-section {
+    background-color: #eb5436;
+    color: #fff;
+    padding: 50px 0; 
+    text-align: center;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.contact-option {
+    margin: 10px 20px; 
+}
+
+.contact-option a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.contact-option a:hover {
+    color: #f9f9f9; 
+}
+
+.contact-option i {
+    font-size: 1.8em; 
+    margin-right: 8px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #212163;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
