@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carvalho Salgados | Sabor Incomparável</title>
+    <title>Carvalho Salgados | Premium</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,15 +15,20 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="brand">
-                <img src="Logotipo .png" alt="Carvalho Salgados" class="nav-logo">
-                <span>Carvalho<span class="highlight">Salgados</span></span>
+                <span>Carvalho<span class="highlight">.</span></span>
             </a>
+            
             <ul class="nav-links">
-                <li><a href="#home" class="active">Início</a></li>
-                <li><a href="#menu">Cardápio</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact" class="btn-nav">Peça Agora</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <a href="#cart" class="icon-btn"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#contact" class="btn-pill">Pedir Agora</a>
+            </div>
+
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -33,33 +38,53 @@
     <header id="home" class="hero">
         <div class="container hero-container">
             <div class="hero-text fade-up">
-                <span class="tag">Sabor Artesanal</span>
-                <h1>Salgados que <br>Derretem na Boca</h1>
-                <p>A combinação perfeita de massa leve e recheio generoso. Feito com carinho para os seus melhores momentos.</p>
-                <div class="hero-buttons">
-                    <a href="#menu" class="btn-primary">Ver Cardápio <i class="fas fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn-secondary"><i class="fab fa-whatsapp"></i> Pedir no Whats</a>
-                </div>
+                <div class="badge-pill">🚀 O melhor da cidade</div>
+                <h1>Sabor que <br>transborda.</h1>
+                <p>Massa artesanal, recheio cremoso e aquela crocância irresistível. Peça e receba quentinho.</p>
                 
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>+5k</h3>
-                        <p>Clientes Felizes</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>4.9</h3>
-                        <p>Avaliação ⭐</p>
+                <div class="hero-cta">
+                    <a href="#menu" class="btn-primary shadow-orange">Ver Cardápio</a>
+                    <a href="#contact" class="btn-outline">
+                        <span class="play-icon"><i class="fas fa-play"></i></span> 
+                        Como é feito
+                    </a>
+                </div>
+
+                <div class="trust-badges">
+                    <div class="trust-item">
+                        <i class="fas fa-star text-yellow"></i>
+                        <span><strong>4.9</strong> (2k+ Avaliações)</span>
                     </div>
                 </div>
             </div>
             
-            <div class="hero-image fade-in">
-                <div class="blob"></div>
-                <img src="https://jopanas.com.br/wp-content/uploads/2023/02/Salgados-para-festa-no-trabalho.jpg" alt="Salgados Deliciosos" class="floating-img">
+            <div class="hero-visual">
+                <div class="circle-bg"></div>
                 
-                <div class="float-card">
-                    <i class="fas fa-fire"></i>
-                    <span>Saindo quentinho!</span>
+                <img src="https://i.imgur.com/H1g1qZz.png" alt="Salgados" class="main-img floating-main">
+                
+                <div class="float-badge badge-top-right floating-1">
+                    <div class="icon-box">🔥</div>
+                    <div class="badge-content">
+                        <span>Calorias?</span>
+                        <strong>Vale a pena!</strong>
+                    </div>
+                </div>
+
+                <div class="float-badge badge-bottom-left floating-2">
+                    <div class="icon-box">⏱️</div>
+                    <div class="badge-content">
+                        <span>Entrega</span>
+                        <strong>30 min</strong>
+                    </div>
+                </div>
+
+                <div class="float-badge badge-bottom-right floating-3">
+                    <div class="icon-box">❤️</div>
+                    <div class="badge-content">
+                        <span>Feito com</span>
+                        <strong>Amor</strong>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,95 +93,54 @@
     <section id="menu" class="menu-section">
         <div class="container">
             <div class="section-header fade-up">
-                <h2>Nosso Cardápio</h2>
-                <p>Escolha a sua categoria favorita</p>
+                <h2>Nosso Menu</h2>
+                <p>Escolha sua categoria favorita</p>
             </div>
 
-            <div class="category-block fade-up">
-                <div class="category-header">
-                    <i class="fas fa-star category-icon"></i>
-                    <h3>Pastéis Crocantes</h3>
-                </div>
-                <div class="menu-grid">
-                    <div class="product-card">
-                        <div class="card-image">
-                            <i class="fas fa-cheese"></i>
-                        </div>
-                        <div class="card-info">
-                            <h4>Pastel de Frango</h4>
-                            <p class="desc">Frango desfiado temperado</p>
-                            <div class="price-row">
-                                <span class="price">R$ 7,00</span>
-                                <button class="btn-add"><i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-image">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <div class="card-info">
-                            <h4>Frango c/ Catupiry</h4>
-                            <p class="desc">A combinação clássica</p>
-                            <div class="price-row">
-                                <span class="price">R$ 8,00</span>
-                                <button class="btn-add"><i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="card-image">
-                            <i class="fas fa-bacon"></i>
-                        </div>
-                        <div class="card-info">
-                            <h4>Calabresa c/ Queijo</h4>
-                            <p class="desc">Sabor intenso</p>
-                            <div class="price-row">
-                                <span class="price">R$ 8,00</span>
-                                <button class="btn-add"><i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="category-tabs fade-up">
+                <button class="tab-btn active">Populares</button>
+                <button class="tab-btn">Coxinhas</button>
+                <button class="tab-btn">Pastéis</button>
             </div>
 
-            <div class="category-block fade-up">
-                <div class="category-header">
-                    <i class="fas fa-drumstick-bite category-icon"></i>
-                    <h3>Coxinhas</h3>
-                </div>
-                <div class="menu-grid">
-                    <div class="product-card">
-                        <div class="card-image">
-                            <i class="fas fa-drumstick-bite"></i>
-                        </div>
-                        <div class="card-info">
-                            <h4>Coxinha Tradicional</h4>
-                            <p class="desc">Massa leve de batata</p>
-                            <div class="price-row">
-                                <span class="price">R$ 5,00</span>
-                                <button class="btn-add"><i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
+            <div class="menu-grid">
+                <div class="food-card fade-up">
+                    <div class="card-img-container bg-yellow">
+                        <i class="fas fa-drumstick-bite icon-placeholder"></i>
+                        <span class="price-tag">R$ 5,00</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="rating"><i class="fas fa-star"></i> 5.0</div>
+                        <h3>Coxinha de Frango</h3>
+                        <p>Massa de batata e frango.</p>
+                        <button class="btn-add"><i class="fas fa-plus"></i></button>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-    </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container contact-container fade-up">
-            <div class="contact-box">
-                <h2>Faça seu Pedido</h2>
-                <p>Estamos prontos para atender você. Chame no WhatsApp!</p>
-                <div class="contact-links">
-                    <a href="https://api.whatsapp.com/send?phone=5511985679589" class="contact-btn whatsapp">
-                        <i class="fab fa-whatsapp"></i> (11) 98567-9589
-                    </a>
-                    <a href="https://instagram.com/_carvalhosalgados" class="contact-btn instagram">
-                        <i class="fab fa-instagram"></i> @carvalhosalgados
-                    </a>
+                 <div class="food-card fade-up">
+                    <div class="card-img-container bg-red">
+                        <i class="fas fa-cheese icon-placeholder"></i>
+                        <span class="price-tag">R$ 8,00</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+                        <h3>Pastel de Queijo</h3>
+                        <p>Queijo derretido e massa crocante.</p>
+                        <button class="btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                
+                 <div class="food-card fade-up">
+                    <div class="card-img-container bg-yellow">
+                        <i class="fas fa-bacon icon-placeholder"></i>
+                        <span class="price-tag">R$ 8,00</span>
+                    </div>
+                    <div class="card-details">
+                        <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+                        <h3>Pastel Bauru</h3>
+                        <p>Presunto, queijo e tomate.</p>
+                        <button class="btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,10 +148,7 @@
 
     <footer>
         <div class="container footer-content">
-            <div class="logo-footer">
-                <img src="Logotipo .png" alt="Logo">
-                <p>© 2025 Carvalho Salgados. Todos os direitos reservados.</p>
-            </div>
+            <p>© 2025 Carvalho Salgados.</p>
         </div>
     </footer>
 
